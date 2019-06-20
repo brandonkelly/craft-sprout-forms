@@ -22,6 +22,7 @@ class Settings extends Model implements SproutSettingsInterface
     public $enablePerFormTemplateFolderOverride = 0;
     public $captchaSettings = [];
     public $enableEditFormEntryViaFrontEnd = 0;
+    public $mailchimpApi = '';
 
     /**
      * @inheritdoc

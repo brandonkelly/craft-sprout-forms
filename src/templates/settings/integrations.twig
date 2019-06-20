@@ -1,6 +1,6 @@
 {% requireAdmin %}
 
-{% import "_includes/forms" as forms %}
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField %}
 
 {{ autosuggestField({
     label: "Mailchimp API"|t('sprout-forms'),
