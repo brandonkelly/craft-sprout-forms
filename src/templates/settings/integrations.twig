@@ -1,0 +1,16 @@
+{% requireAdmin %}
+
+{% import "_includes/forms" as forms %}
+
+{{ autosuggestField({
+    label: "Mailchimp API"|t('sprout-forms'),
+    instructions: "Your publishable Mailchimp API key."|t('sprout-forms'),
+    id: 'mailchimpApi',
+    class: 'ltr',
+    name: 'mailchimpApi',
+    suggestEnvVars: true,
+    value: settings.mailchimpApi,
+    errors: settings.getErrors('mailchimpApi')
+}) }}
+
+<br>

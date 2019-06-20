@@ -47,6 +47,12 @@ class Settings extends Model implements SproutSettingsInterface
                 'selected' => 'spam-protection',
                 'template' => 'sprout-forms/settings/spamprotection'
             ],
+            'integrations' => [
+                'label' => Craft::t('sprout-forms', 'Integrations'),
+                'url' => 'sprout-forms/settings/integrations',
+                'selected' => 'integrations',
+                'template' => 'sprout-forms/settings/integrations'
+            ],
             'entry-statuses' => [
                 'label' => Craft::t('sprout-forms', 'Entry Statuses'),
                 'url' => 'sprout-forms/settings/entry-statuses',
